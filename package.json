@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "next dev",
     "gh-pages-deploy": "git checkout -f master && git checkout --orphan gh-pages && git --work-tree out add --all && git --work-tree out commit -m 'gh-pages' && git push origin HEAD:gh-pages --force && git checkout -f master",
-    "deploy": "next build && next export && cp CNAME ./out/CNAME && cp .nojekyll ./out/.nojekyll && npm run gh-pages-deploy",
+    "deploy": "next build && next export && cp CNAME ./out/CNAME && cp .nojekyll ./out/_next/.nojekyll && npm run gh-pages-deploy",
     "start": "next start",
     "lint": "next lint"
   },
