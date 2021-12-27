@@ -13,7 +13,6 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1>Hello world!</h1>
         <section>
           <h2>My GitHub activity</h2>
           <img

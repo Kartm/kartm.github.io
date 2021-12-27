@@ -10,7 +10,7 @@ export default function Layout({ children }: Props) {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main style={{ minHeight: "calc(100vh - 60px - 18px)" }}>{children}</main>
       <Footer />
     </>
   );

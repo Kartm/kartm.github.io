@@ -1,0 +1,74 @@
+.header {
+  overflow: hidden;
+  background: #222;
+  padding: 0 22px;
+}
+
+.header a {
+  display: block;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+  line-height: 20px;
+}
+
+.header a:hover {
+  color: #aaa;
+}
+
+.nav {
+  float: left;
+  max-height: 0;
+  width: 100%;
+  -webkit-transition: max-height 0.3s;
+  -moz-transition: max-height 0.3s;
+  -o-transition: max-height 0.3s;
+  transition: max-height 0.3s;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+}
+
+.nav li {
+  display: block;
+  text-align: center;
+}
+
+.nav a {
+  padding: 10px;
+  width: 100%;
+}
+
+#nav {
+  display: none;
+}
+
+#nav:checked ~ .nav {
+  max-height: 200px; /* This can be anything bigger than your nav height. The transition duration works with this */
+}
+
+@media only screen and (min-width: 700px) {
+  .nav {
+    width: auto;
+    max-height: none;
+  }
+
+  .nav ul {
+    padding: 0;
+    padding-right: 10px;
+  }
+
+  .nav li {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .header .nav a {
+    display: inline-block;
+    padding: 20px 10px;
+    width: auto;
+  }
+}
