@@ -1,3 +1,5 @@
 export default function Footer() {
-  return <div>footer</div>;
+  const year = new Date().getFullYear();
+
+  return <footer>Copyright &copy; {year}</footer>;
 }
