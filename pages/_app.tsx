@@ -1,14 +1,20 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Layout from "../components/Layout";
-import { TrackingHeadScript } from "@phntms/next-gtm";
+import { useEffect } from "react";
+import TagManager from "react-gtm-module";
 
-const REACT_APP_GA_TRACKING_ID = process.env.REACT_APP_GA_TRACKING_ID || "";
+const gtmId = process.env.NEXT_PUBLIC_GA_TRACKING_ID || "";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    if (process.env.NODE_ENV === "production") {
+      TagManager.initialize({ gtmId });
+    }
+  }, []);
+
   return (
     <Layout>
-      <TrackingHeadScript id={REACT_APP_GA_TRACKING_ID} />
       <Component {...pageProps} />
     </Layout>
   );
