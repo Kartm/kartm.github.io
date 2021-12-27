@@ -1,21 +1,48 @@
-# React-Static - TypeScript Template
+# \<my-project>
 
-To use this template, run `react-static create` and use the `typescript` template.
+This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
 
-## Path Aliases for Absolute Imports
+## Installation
 
-`react-static-typescript-plugin` supports path aliases [since v3.1](https://github.com/react-static/react-static/pull/963#issuecomment-455596728). It has been set up in this template.
-
-```js
-// tsconfig.json
-{
-  // ...
-    "paths": {
-      "@components/*": ["src/components/*"]
-    },
-  // ...
-}
-
-// this works in your React app
-import FancyDiv from '@components/FancyDiv'
+```bash
+npm i my-project
 ```
+
+## Usage
+
+```html
+<script type="module">
+  import 'my-project/my-project.js';
+</script>
+
+<my-project></my-project>
+```
+
+## Linting and formatting
+
+To scan the project for linting and formatting errors, run
+
+```bash
+npm run lint
+```
+
+To automatically fix linting and formatting errors, run
+
+```bash
+npm run format
+```
+
+
+## Tooling configs
+
+For most of the tools, the configuration is in the `package.json` to reduce the amount of files in your project.
+
+If you customize the configuration a lot, you can consider moving them to individual files.
+
+## Local Demo with `web-dev-server`
+
+```bash
+npm start
+```
+
+To run a local development server that serves the basic demo located in `demo/index.html`

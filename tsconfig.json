@@ -1,27 +1,21 @@
 {
-  "compileOnSave": false,
   "compilerOptions": {
-    "target": "esnext",
+    "target": "es2018",
     "module": "esnext",
-    "jsx": "preserve",
-    "allowJs": false,
     "moduleResolution": "node",
+    "noEmitOnError": true,
+    "lib": ["es2017", "dom"],
+    "strict": true,
+    "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
-    "noImplicitAny": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "removeComments": false,
-    "preserveConstEnums": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "outDir": "dist",
     "sourceMap": true,
-    "skipLibCheck": true,
-    "noEmit": true,
-    "baseUrl": ".",
-    "paths": {
-      "components/*": ["src/components/*"],
-      "containers/*": ["src/containers/*"],
-      "types/*": ["types/*"]
-    },
-    "lib": ["dom", "es2015", "es2016"]
+    "inlineSources": true,
+    "rootDir": "./",
+    "declaration": true,
+    "incremental": true
   },
-  "exclude": ["artifacts/**/*", "dist/**/*", "public/**/*", "node_modules"]
+  "include": ["**/*.ts"]
 }
