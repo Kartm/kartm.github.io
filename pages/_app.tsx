@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <Layout>
       <CookieConsent
         location="bottom"
-        buttonText="Understand"
+        buttonText="Got it!"
         declineButtonText="Decline"
         enableDeclineButton
         style={{ background: "#222222", fontSize: "13px" }}
