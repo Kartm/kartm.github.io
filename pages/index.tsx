@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <section>
-          <h2>My GitHub activity</h2>
+          <h2>GitHub activity</h2>
           <img
             src="http://ghchart.rshah.org/kartm"
             alt="Kartm's Github activity"
