@@ -13,11 +13,11 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <section>
-          <h2>GitHub activity</h2>
-          <img
-            src="http://ghchart.rshah.org/kartm"
-            alt="Kartm's Github activity"
-          ></img>
+          {/*<h2>GitHub activity</h2>*/}
+          {/*<img*/}
+          {/*  src="http://ghchart.rshah.org/kartm"*/}
+          {/*  alt="Kartm's Github activity"*/}
+          {/*></img>*/}
         </section>
       </main>
     </div>
