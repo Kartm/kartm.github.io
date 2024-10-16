@@ -14,13 +14,33 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
           <section>
-              <h2>{`Master's thesis - Tools and practices to improve developer efficiency`}</h2>
-              <div>
-                  <Image src="/gifs/AtAthens6321underconstruction_lemmings.gif" width="600" height="32" unoptimized/>
+              <h2 style={{textAlign: 'center'}}>{`Master's thesis - Tools and practices to improve developer efficiency`}</h2>
+              <div style={{display: 'flex', justifyContent: 'center'}}>
+                  <Image
+                      src="/gifs/AtAthens6321underconstruction_lemmings.gif"
+                      width="600"
+                      height="32"
+                      unoptimized
+                  />
               </div>
-              <div>
-                  <Image src="/gifs/HeHeartlandGrove2575lineconstruction.gif" width="573" height="18" unoptimized/>
+              <div style={{display: 'flex', justifyContent: 'center'}}>
+                  <Image
+                      src="/gifs/HeHeartlandGrove2575lineconstruction.gif"
+                      width="573"
+                      height="18"
+                      unoptimized
+                  />
               </div>
+              <iframe
+                  style={{marginTop: '32px'}}
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSeqr9wSBcmEX3Q202Ha5vnX8n8rccDfuS7ohr4Uej_Nt2IMdQ/viewform?embedded=true"
+                  width="100%"
+                  height="600"
+                  frameBorder="0"
+                  marginHeight={0}
+                  marginWidth={0}
+              >Loading…
+              </iframe>
           </section>
       </main>
     </div>

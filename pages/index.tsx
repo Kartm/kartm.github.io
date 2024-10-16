@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import Image from "next/image";
 
 const Home: NextPage = () => {
   return (
@@ -12,13 +13,16 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <section>
-          {/*<h2>GitHub activity</h2>*/}
-          {/*<img*/}
-          {/*  src="http://ghchart.rshah.org/kartm"*/}
-          {/*  alt="Kartm's Github activity"*/}
-          {/*></img>*/}
-        </section>
+          <section>
+              <div>
+                  <Image
+                      src="/gifs/john-travolta-lost.gif"
+                      width="220"
+                      height="212"
+                      unoptimized
+                  />
+              </div>
+          </section>
       </main>
     </div>
   );

@@ -10,8 +10,7 @@ interface MenuOption {
 export default function Header() {
   const menuOptions: MenuOption[] = [
     { href: "/", title: "Home" },
-    { href: "/projects", title: "Projects" },
-    { href: "/privacy", title: "Privacy" },
+    { href: "/projects/masters-thesis", title: "Projects" },
   ];
 
   const router = useRouter();
