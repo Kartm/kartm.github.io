@@ -15,8 +15,12 @@ const Home: NextPage = () => {
       <main className={styles.main}>
           <section>
               <h2>{`Master's thesis - Tools and practices to improve developer efficiency`}</h2>
-              <Image src="/gifs/AtAthens6321underconstruction_lemmings.gif" width="600" height="32" unoptimized/>
-              <Image src="/gifs/HeHeartlandGrove2575lineconstruction.gif" width="573" height="18" unoptimized/>
+              <div>
+                  <Image src="/gifs/AtAthens6321underconstruction_lemmings.gif" width="600" height="32" unoptimized/>
+              </div>
+              <div>
+                  <Image src="/gifs/HeHeartlandGrove2575lineconstruction.gif" width="573" height="18" unoptimized/>
+              </div>
           </section>
       </main>
     </div>
