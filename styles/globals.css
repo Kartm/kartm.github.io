@@ -9,3 +9,105 @@ body {
 * {
   box-sizing: border-box;
 }
+
+table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.8em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+thead tr {
+    background-color: #222;
+    color: #ffffff;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 12px 15px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #222;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+text-align: left;
+    font-size: 1em;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.15em;
+  vertical-align: -0.4em;
+}
+blockquote:after {
+  content: close-quote;
+    quotes: none;
+}
+blockquote p {
+  display: inline;
+}
+
+.article-content {
+  max-width: 80ch;
+  margin: 0 auto;
+    width: 100%;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: #222;
+  background: #fff;
+}
+
+.article-content p {
+  margin: 1.2em 0;
+}
+
+.article-content h1,
+.article-content h2,
+.article-content h3 {
+  line-height: 1.3;
+  margin: 2rem 0 1rem;
+  font-weight: bold;
+}
+
+.article-content img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+}
+@media (max-width: 600px) {
+  .article-content {
+    padding: 0.75rem;
+  }
+}
+@media (max-width: 375px) {
+  .article-content img {
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding: 0 16px;
+    height: auto;
+    display: block;
+  }
+}

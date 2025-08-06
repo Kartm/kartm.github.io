@@ -2,27 +2,36 @@
   "name": "my-app",
   "private": true,
   "scripts": {
-    "gh-pages-deploy": "git checkout -f master && git checkout --orphan gh-pages && git --work-tree out add --all && git --work-tree out commit -m 'gh-pages' && git push origin HEAD:gh-pages --force && git checkout -f master",
-    "deploy": "next build && next export && cp CNAME ./out/CNAME && cp .nojekyll ./out/_next/.nojekyll && cp .nojekyll ./out/.nojekyll && npm run gh-pages-deploy",
     "build": "next build",
     "start": "next dev",
     "lint": "next lint"
   },
   "dependencies": {
-    "@babel/core": "^7.16.5",
-    "next": "^12.3.4",
+    "@babel/core": "^7.28.0",
+    "@mdx-js/loader": "^3.1.0",
+    "@mdx-js/react": "^3.1.0",
+    "@next/mdx": "^15.4.5",
+    "next": "^13.5.11",
     "postcss": "^8.4.31",
-    "react": "17.0.2",
-    "react-cookie-consent": "^7.2.0",
-    "react-dom": "17.0.2",
-    "react-gtm-module": "^2.0.11"
+    "react": "^18.3.1",
+    "react-cookie-consent": "^9.0.0",
+    "react-dom": "^18.3.1",
+    "react-gtm-module": "^2.0.11",
+    "rehype-autolink-headings": "^7.1.0",
+    "rehype-github-alerts": "^4.1.1",
+    "rehype-slug": "^6.0.0",
+    "remark-gfm": "^4.0.1",
+    "remark-normalize-headings": "^4.0.0",
+    "tocbot": "^4.36.4"
   },
   "devDependencies": {
+    "@types/mdx": "2.0.13",
     "@types/node": "17.0.5",
     "@types/react": "^17.0.38",
     "@types/react-gtm-module": "^2.0.1",
     "eslint": "8.5.0",
     "eslint-config-next": "12.0.7",
-    "typescript": "4.5.4"
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2"
   }
 }
