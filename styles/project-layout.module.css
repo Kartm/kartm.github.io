@@ -17,15 +17,38 @@
   line-height: 1.6;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   color: #222;
-  background: #fff;
 }
+
+.article h1,.article h2,.article h3,.article h4,.article h5,.article h6 {
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 4px;
+  }
 
 .article img {
     width: 100%;
-    padding: 0 16px;
     height: auto;
     display: block;
   }
+
+.article figure {
+  counter-increment: my-counter;
+  width: 100%;
+  margin: 0;
+  padding: 2rem;
+}
+
+.article figure figcaption {
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.article figure figcaption::before {
+  content: "Figure " counter(my-counter) ": ";
+}
+
+.article figure figcaption::after {
+  content: ".";
+}
 
 @media (max-width: 600px) {
   .article {
@@ -46,8 +69,56 @@
 }
 
 .toc {
-  order: -1;
-  background: #fafafa;
+  visibility: hidden;
+  overflow-y: hidden;
+
+  .toc-list li{
+    list-style:decimal-leading-zero;
+}
+}
+
+
+
+.toc h5, .toc a, .toc li::marker {
+  font-size: 0.75rem;
+  line-height: 16px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-weight: normal;
+}
+
+.toc li {
+  margin-top: 0.3rem;
+}
+
+a.activeLink {
+  color: #222;
+}
+
+li.activeLi::marker {
+  color: #222;
+}
+
+a.activeLink::before {
+  background-color: #ffc900;
+  left: 1.2rem;
+}
+
+a.link {
+  text-decoration: none;
+}
+
+a.link::before {
+  left: 1.2rem;
+  width: 1px;
+}
+
+.toc a {
+  display: block;
+}
+
+.toc h5 {
+  margin: 0 0 1rem;
+  font-weight: bold;
 }
 
 /* --- Desktop / large screens --- */
@@ -65,8 +136,19 @@
   }
 
   .toc {
-    order: 0;              /* normal order again in grid */
-    position: sticky;      /* "floating" on the right while scrolling */
-    top: 96px;             /* adjust to match your header height */
+    visibility: visible;
+    background: #fafafa;
+    position: sticky;
+    top: 96px;
+    padding: 1em 2em 0.3em;
+    color: #787878;
+  }
+
+  a.toc-link {
+    text-decoration: none;
+  }
+
+  .toc h5 {
+    color: #222;
   }
 }

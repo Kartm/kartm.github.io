@@ -4,63 +4,14 @@ export const meta = {
     title: 'What really matters in software developer productivity: a 105-dev survey',
 }
 
-{/*
-todo this layout https://bun.com/blog/behind-the-scenes-of-bun-install?utm_source=unknownews
-*/}
-
 <ProjectLayout meta={meta}>
 
 # What really matters in software developer productivity: a 105-dev survey
-
-## TL;DR
-Survey reveals what actually affects delivery: clear requirements, appropriate resources, insightful code reviews, basic CI/CD, allocating tech-debt time. Choice of communication tools and "raw coding hours" matter less.
-
-## Quick wins
-
-By addressing common problems and making small improvements, teams can see immediate benefits, such as faster task completion and higher morale. Practical recommendations that can be implemented right away:
-
-| Action steps                                                                                                                                      | Expected benefit                                                   |
-|---------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| **Automate the small stuff** <br/> - Configure basic CI/CD pipelines for builds, tests, and deployments <br/> - Integrate code linters/formatters                                         | Reduces manual errors, saves developer time, and removes repetitive style discussions |
-| **Improve task clarity** <br/> - Remember to clear up uncertainties during daily stand-ups <br/> - Thoroughly refine tickets before work begins                                   | Minimizes confusion, avoids rework caused by unclear requirements    |
-| **Tweak meeting cadence** <br/> - Consolidate topics into one session <br/> - Invite only essential participants                                                               | Reduces context switching, frees up time for deep work             |
-| **Refine communication** <br/> - Introduce "quiet hours" <br/> - Encourage asynchronous updates when possible                                                                | Preserves concentration, decreases frequent interruptions          |
-| **Micro-refactoring** <br/> - Schedule small refactoring tasks each sprint <br/> - Fix minor "code smells" early                                                           | Prevents technical debt from compounding over time                 |
-| **Immediate recognition** <br/> - Celebrate small wins with your team <br/> - Acknowledge code review or task completions                                                      | Boosts morale, promotes positive team culture                      |
-
-
-## Long-term strategies
-
-More comprehensive changes that require more time and effort to implement, but may lead to prolonged improvements in developer efficiency:
-
-| Action steps                                                                                                                                   | Expected benefit                                                                 |
-|-----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| **Implement effective planning** <br/> - Adopt robust requirement practices (e.g., backlog grooming, user story mapping)                                                             | Reduces misunderstandings and rework; improves transparency in project scope    |
-| **Promote a smooth code review culture** <br/> - Define code review SLAs (e.g., max 24-hour turnaround)<br/>- Emphasize mentorship by explaining the "why" behind suggestions                   | Keeps tasks flowing, improves knowledge sharing, and increases developer confidence |
-| **Systematically address tech debt** <br/> - Allocate a consistent share of each sprint (e.g., 10–20%) for refactoring<br/>- Maintain a visible "technical debt board" to prioritize items by risk and impact | Prevents legacy issues from piling up; ensures sustainable code quality over time |
-| **Promote adaptable work environments** <br/> - Offer flexible policies (remote, on-site, or hybrid) based on team and project needs<br/>- Use team-building events to maintain connection | Balances productivity with well-being; mitigates isolation and helps retain talent |
-| **Support well-being & recognition** <br/> - Schedule regular 1:1s for feedback, goal-setting, and personal challenges<br/>- Provide "no-blame" retrospectives and genuine appreciation for efforts | Builds psychological safety, reduces burnout, and improves teamwork         |
-
-
-![Developer productivity hero](/media/media/developer-productivity-hero.jpg "Developer productivity hero")
-
-# Introduction
-
-I found advice on dev productivity often anecdotal, so I performed a survey to see first-hand what has a real impact on developer productivity.
-
-I used [SPACE framework](https://queue.acm.org/detail.cfm?id=3454124) to view productivity with a multidimensional take:
-
-* **Satisfaction**: Understanding developers' well-being is crucial because stress, lack of recognition, or poor work-life balance can negatively affect productivity.
-
-* **Performance**: Evaluating how well developers meet goals and deadlines provides insight into whether existing tools and processes are effectively supporting them.
-
-* **Activity**: Understanding how daily tasks are managed helps highlight bottlenecks and time-wasting activities that can reduce productivity.
-
-* **Communication**: Effective teamwork and communication are essential in software development. Problems in collaboration can lead to delays, misaligned goals, or rework.
-
-* **Efficiency**: How smoothly developers can complete tasks without disruptions. Interruptions, long wait times for code reviews, or the burden of technical debt can reduce flow, making it harder for developers to stay productive.
+_Published 29 Sep 2025_
 
 In late 2024 I have conducted a **10-week-long survey on 105 developers** recruited from social media platforms (e.g., LinkedIn, Reddit), professional forums (e.g., HackerNews), and various software development communities. This allowed me to capture a wide range of backgrounds, including differences in experience level, technology stacks, team sizes, and organizational types.
+
+My goal was simple: validate the anecdotal advice and see first-hand what has real impact on developer productivity.
 
 ![Respondent age group distribution](/media/media/age-distribution.svg "Respondent age group distribution")
 
@@ -415,8 +366,32 @@ Developers perceiving tech debt as positive don't claim zero debt. Rather they r
 > [!IMPORTANT]
 > Regularly allocating time for debt appears beneficial. The best outcomes seem to appear when debt is managed in **consistent but balanced** manner, avoiding both full-blown rewrites and complete neglect.
 
-## Credits
+# Conclusion
 
-* Hero image by [Olivier Amyot](https://unsplash.com/photos/the-mug-shows-the-development-process-steps-WvuS4BQ94XQ)
+## Quick wins
+
+By addressing common problems and making small improvements, teams can see immediate benefits, such as faster task completion and higher morale. Practical recommendations that can be implemented right away:
+
+| Action steps                                                                                                                                      | Expected benefit                                                   |
+|---------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
+| **Automate the small stuff** <br/> - Configure basic CI/CD pipelines for builds, tests, and deployments <br/> - Integrate code linters/formatters                                         | Reduces manual errors, saves developer time, and removes repetitive style discussions |
+| **Improve task clarity** <br/> - Remember to clear up uncertainties during daily stand-ups <br/> - Thoroughly refine tickets before work begins                                   | Minimizes confusion, avoids rework caused by unclear requirements    |
+| **Tweak meeting cadence** <br/> - Consolidate topics into one session <br/> - Invite only essential participants                                                               | Reduces context switching, frees up time for deep work             |
+| **Refine communication** <br/> - Introduce "quiet hours" <br/> - Encourage asynchronous updates when possible                                                                | Preserves concentration, decreases frequent interruptions          |
+| **Micro-refactoring** <br/> - Schedule small refactoring tasks each sprint <br/> - Fix minor "code smells" early                                                           | Prevents technical debt from compounding over time                 |
+| **Immediate recognition** <br/> - Celebrate small wins with your team <br/> - Acknowledge code review or task completions                                                      | Boosts morale, promotes positive team culture                      |
+
+
+## Long-term strategies
+
+More comprehensive changes that require more time and effort to implement, but may lead to prolonged improvements in developer efficiency:
+
+| Action steps                                                                                                                                   | Expected benefit                                                                 |
+|-----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| **Implement effective planning** <br/> - Adopt robust requirement practices (e.g., backlog grooming, user story mapping)                                                             | Reduces misunderstandings and rework; improves transparency in project scope    |
+| **Promote a smooth code review culture** <br/> - Define code review SLAs (e.g., max 24-hour turnaround)<br/>- Emphasize mentorship by explaining the "why" behind suggestions                   | Keeps tasks flowing, improves knowledge sharing, and increases developer confidence |
+| **Systematically address tech debt** <br/> - Allocate a consistent share of each sprint (e.g., 10–20%) for refactoring<br/>- Maintain a visible "technical debt board" to prioritize items by risk and impact | Prevents legacy issues from piling up; ensures sustainable code quality over time |
+| **Promote adaptable work environments** <br/> - Offer flexible policies (remote, on-site, or hybrid) based on team and project needs<br/>- Use team-building events to maintain connection | Balances productivity with well-being; mitigates isolation and helps retain talent |
+| **Support well-being & recognition** <br/> - Schedule regular 1:1s for feedback, goal-setting, and personal challenges<br/>- Provide "no-blame" retrospectives and genuine appreciation for efforts | Builds psychological safety, reduces burnout, and improves teamwork         |
 
 </ProjectLayout>

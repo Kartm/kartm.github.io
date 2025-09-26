@@ -1,9 +1,9 @@
 import createMDX from '@next/mdx'
 import remarkGfm from 'remark-gfm'
 import {rehypeGithubAlerts} from 'rehype-github-alerts'
-import remarkNormalizeHeadings from "remark-normalize-headings";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import rehypeFigure from "@microflash/rehype-figure";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -20,9 +20,8 @@ const withMDX = createMDX({
   options: {
     remarkPlugins: [
       remarkGfm,
-      remarkNormalizeHeadings
     ],
-    rehypePlugins: [rehypeGithubAlerts, rehypeSlug, rehypeAutolinkHeadings],
+    rehypePlugins: [rehypeGithubAlerts, rehypeSlug, rehypeAutolinkHeadings, rehypeFigure],
   }
 })
 

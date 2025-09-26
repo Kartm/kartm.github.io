@@ -26,7 +26,6 @@ export default function MainLayout({ children, meta }: Props) {
       <main
         style={{
           minHeight: "calc(100vh - 60px - 60px)",
-          padding: "32px 32px 0",
           display: "flex",
           flexDirection: "column",
           boxSizing: "border-box",
