@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2025-09-27T16:06:57.444758</dc:date>
+    <dc:date>2025-10-03T20:14:43.985472</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -44,7 +44,7 @@ z
      <g id="line2d_1">
       <path d="M 180.91375 501.66 
 L 180.91375 7.2 
-" clip-path="url(#p36ea6d331b)" style="fill: none; stroke: #d3d3d3; stroke-width: 1.5; stroke-linecap: round"/>
+" clip-path="url(#pee00a961eb)" style="fill: none; stroke: #d3d3d3; stroke-width: 1.5; stroke-linecap: round"/>
      </g>
      <g id="text_1">
       <!-- Rare stress -->
@@ -233,7 +233,7 @@ z
      <g id="line2d_2">
       <path d="M 304.52875 501.66 
 L 304.52875 7.2 
-" clip-path="url(#p36ea6d331b)" style="fill: none; stroke: #d3d3d3; stroke-width: 1.5; stroke-linecap: round"/>
+" clip-path="url(#pee00a961eb)" style="fill: none; stroke: #d3d3d3; stroke-width: 1.5; stroke-linecap: round"/>
      </g>
      <g id="text_2">
       <!-- Rare impostor syndrome -->
@@ -424,7 +424,7 @@ z
      <g id="line2d_3">
       <path d="M 428.14375 501.66 
 L 428.14375 7.2 
-" clip-path="url(#p36ea6d331b)" style="fill: none; stroke: #d3d3d3; stroke-width: 1.5; stroke-linecap: round"/>
+" clip-path="url(#pee00a961eb)" style="fill: none; stroke: #d3d3d3; stroke-width: 1.5; stroke-linecap: round"/>
      </g>
      <g id="text_3">
       <!-- Frequent recognition -->
@@ -656,7 +656,7 @@ z
      <g id="line2d_4">
       <path d="M 119.10625 69.0075 
 L 489.95125 69.0075 
-" clip-path="url(#p36ea6d331b)" style="fill: none; stroke: #d3d3d3; stroke-width: 1.5; stroke-linecap: round"/>
+" clip-path="url(#pee00a961eb)" style="fill: none; stroke: #d3d3d3; stroke-width: 1.5; stroke-linecap: round"/>
      </g>
      <g id="text_5">
       <!-- Helpful and delayed -->
@@ -778,7 +778,7 @@ z
      <g id="line2d_5">
       <path d="M 119.10625 192.6225 
 L 489.95125 192.6225 
-" clip-path="url(#p36ea6d331b)" style="fill: none; stroke: #d3d3d3; stroke-width: 1.5; stroke-linecap: round"/>
+" clip-path="url(#pee00a961eb)" style="fill: none; stroke: #d3d3d3; stroke-width: 1.5; stroke-linecap: round"/>
      </g>
      <g id="text_6">
       <!-- Helpful and fast -->
@@ -820,7 +820,7 @@ L 489.95125 192.6225
      <g id="line2d_6">
       <path d="M 119.10625 316.2375 
 L 489.95125 316.2375 
-" clip-path="url(#p36ea6d331b)" style="fill: none; stroke: #d3d3d3; stroke-width: 1.5; stroke-linecap: round"/>
+" clip-path="url(#pee00a961eb)" style="fill: none; stroke: #d3d3d3; stroke-width: 1.5; stroke-linecap: round"/>
      </g>
      <g id="text_7">
       <!-- Unhelpful and delayed -->
@@ -899,7 +899,7 @@ z
      <g id="line2d_7">
       <path d="M 119.10625 439.8525 
 L 489.95125 439.8525 
-" clip-path="url(#p36ea6d331b)" style="fill: none; stroke: #d3d3d3; stroke-width: 1.5; stroke-linecap: round"/>
+" clip-path="url(#pee00a961eb)" style="fill: none; stroke: #d3d3d3; stroke-width: 1.5; stroke-linecap: round"/>
      </g>
      <g id="text_8">
       <!-- Unhelpful and fast -->
@@ -946,73 +946,73 @@ L 242.72125 7.2
 L 242.72125 130.815 
 L 119.10625 130.815 
 L 119.10625 7.2 
-" clip-path="url(#p36ea6d331b)" style="fill: #006837"/>
+" clip-path="url(#pee00a961eb)" style="fill: #006837"/>
     <path d="M 242.72125 7.2 
 L 366.33625 7.2 
 L 366.33625 130.815 
 L 242.72125 130.815 
 L 242.72125 7.2 
-" clip-path="url(#p36ea6d331b)" style="fill: #fece7c"/>
+" clip-path="url(#pee00a961eb)" style="fill: #fece7c"/>
     <path d="M 366.33625 7.2 
 L 489.95125 7.2 
 L 489.95125 130.815 
 L 366.33625 130.815 
 L 366.33625 7.2 
-" clip-path="url(#p36ea6d331b)" style="fill: #afdd70"/>
+" clip-path="url(#pee00a961eb)" style="fill: #afdd70"/>
     <path d="M 119.10625 130.815 
 L 242.72125 130.815 
 L 242.72125 254.43 
 L 119.10625 254.43 
 L 119.10625 130.815 
-" clip-path="url(#p36ea6d331b)" style="fill: #e9f6a1"/>
+" clip-path="url(#pee00a961eb)" style="fill: #e9f6a1"/>
     <path d="M 242.72125 130.815 
 L 366.33625 130.815 
 L 366.33625 254.43 
 L 242.72125 254.43 
 L 242.72125 130.815 
-" clip-path="url(#p36ea6d331b)" style="fill: #c3e67d"/>
+" clip-path="url(#pee00a961eb)" style="fill: #c3e67d"/>
     <path d="M 366.33625 130.815 
 L 489.95125 130.815 
 L 489.95125 254.43 
 L 366.33625 254.43 
 L 366.33625 130.815 
-" clip-path="url(#p36ea6d331b)" style="fill: #026c39"/>
+" clip-path="url(#pee00a961eb)" style="fill: #026c39"/>
     <path d="M 119.10625 254.43 
 L 242.72125 254.43 
 L 242.72125 378.045 
 L 119.10625 378.045 
 L 119.10625 254.43 
-" clip-path="url(#p36ea6d331b)" style="fill: #a50026"/>
+" clip-path="url(#pee00a961eb)" style="fill: #a50026"/>
     <path d="M 242.72125 254.43 
 L 366.33625 254.43 
 L 366.33625 378.045 
 L 242.72125 378.045 
 L 242.72125 254.43 
-" clip-path="url(#p36ea6d331b)" style="fill: #fafdb8"/>
+" clip-path="url(#pee00a961eb)" style="fill: #fafdb8"/>
     <path d="M 366.33625 254.43 
 L 489.95125 254.43 
 L 489.95125 378.045 
 L 366.33625 378.045 
 L 366.33625 254.43 
-" clip-path="url(#p36ea6d331b)" style="fill: #dff293"/>
+" clip-path="url(#pee00a961eb)" style="fill: #dff293"/>
     <path d="M 119.10625 378.045 
 L 242.72125 378.045 
 L 242.72125 501.66 
 L 119.10625 501.66 
 L 119.10625 378.045 
-" clip-path="url(#p36ea6d331b)" style="fill: #e5f49b"/>
+" clip-path="url(#pee00a961eb)" style="fill: #e5f49b"/>
     <path d="M 242.72125 378.045 
 L 366.33625 378.045 
 L 366.33625 501.66 
 L 242.72125 501.66 
 L 242.72125 378.045 
-" clip-path="url(#p36ea6d331b)" style="fill: #e95538"/>
+" clip-path="url(#pee00a961eb)" style="fill: #e95538"/>
     <path d="M 366.33625 378.045 
 L 489.95125 378.045 
 L 489.95125 501.66 
 L 366.33625 501.66 
 L 366.33625 378.045 
-" clip-path="url(#p36ea6d331b)" style="fill: #c21c27"/>
+" clip-path="url(#pee00a961eb)" style="fill: #c21c27"/>
    </g>
    <g id="text_9">
     <!-- 3.67 -->
@@ -1469,7 +1469,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p36ea6d331b">
+  <clipPath id="pee00a961eb">
    <rect x="119.10625" y="7.2" width="370.845" height="494.46"/>
   </clipPath>
  </defs>

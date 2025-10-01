@@ -7,11 +7,15 @@ export const meta = {
 <ProjectLayout meta={meta}>
 
 # What really matters in software developer productivity: a 105-dev survey
-_Published 29 Sep 2025_
+_Published 4 Oct 2025_
 
-In late 2024 I have conducted a **10-week-long survey on 105 developers** recruited from social media platforms (e.g., LinkedIn, Reddit), professional forums (e.g., HackerNews), and various software development communities. This allowed me to capture a wide range of backgrounds, including differences in experience level, technology stacks, team sizes, and organizational types.
+In late 2024 I have conducted a **10-week-long survey on 105 developers** recruited from social media platforms (e.g. LinkedIn, Reddit), professional forums (e.g. HackerNews), and various software development communities. This allowed me to capture a wide range of backgrounds, including differences in experience level, technology stacks, team sizes, and organizational types.
 
 My goal was simple: validate the anecdotal advice and see first-hand what has real impact on developer productivity.
+
+**TL;DR** — Jump to [key findings](#conclusion).
+
+---
 
 ![Respondent age group distribution](/media/media/age-distribution.svg "Respondent age group distribution")
 
@@ -44,7 +48,7 @@ Project scale impacts the complexity and types of challenges teams face, with la
 
 34% of participants are engaged in small teams of 3 to 5 members, while 44% operate within medium-sized teams consisting of 6 to 15 members. Making a comparison between these two team sizes is an opportunity to understand how team composition influences other measured factors.
 
-# Work environment vs job satisfaction
+# Physical work environment
 
 Work environment is not only the physical space where developers work (remote, on-site, hybrid). It also includes the mental environment: team culture, motivation factors, stress levels.
 
@@ -79,7 +83,13 @@ There are even more differences in how developers experience remote-only work.
 
 Remote teams enjoy flexibility and asynchronous work but risk more alignment calls, digital interruptions, and self-discipline hurdles. Onsite/hybrid teams benefit from rapid in-person collaboration yet face noise and social intrusions.
 
-# Planning, deployment and developer productivity
+![Distribution of work environments across age groups](/media/media/age-groups-across-work-envs.svg "Distribution of work environments across age groups")
+
+Youngest developers are far more likely to be working in hybrid or onsite roles. It might reflect post-pandemic company policies that expect developers to be present in the office.
+
+In contrast, developers over 35 work mostly remotely. This may reflect a prioritization of work-life balance, especially for those with families.
+
+# Planning and resources
 
 Let's see how developers perceive their own momentum and ability to deliver on time.
 
@@ -105,21 +115,21 @@ Developers lacking resources and developers complaining about unclear requiremen
 
 ![Distribution of deadline-reaching obstacles by team size](/media/media/deadline-obstacles-by-team-size.svg "Distribution of deadline-reaching obstacles by team size")
 
-Scope creep appears universal across all team sizes, highlighting that no matter how large the team is, changing requirements and additional features remain a main threat to on-time delivery.
+Scope creep appears universal across all team sizes, highlighting that no matter how large the team is, changing requirements and additional features remain a **main threat to on-time delivery**.
 
-* **Smallest teams**: often cite a lack of resources (e.g., insufficient team members or missing tools) as a primary reason for missing deadlines. Most likely individuals have specialized skillsets, and any absence of expertise or tooling can cause major bottlenecks.
+Smallest teams were often subject to lack of resources (e.g. insufficient team members or missing tools) as a primary reason for missing deadlines. Most likely individuals have specialized skillsets, and any absence of expertise or tooling can cause major bottlenecks.
 
-* **Mid-sized teams** (3–15 members) show a more balanced distribution of obstacles, with scope creep and unclear requirements being consistently present. They typically have enough staff to handle various tasks but may face communication overhead or shifting priorities.
+Medium-sized teams show a more balanced distribution of obstacles, with scope creep and unclear requirements being consistently present. They typically have enough staff to handle various tasks but may face communication overhead or shifting priorities.
 
-* **Very large teams** (31+ members) also report lack of resources, which might seem counterintuitive at first. A possible explanation is that in big organizations, specialized resources are sometimes tied to specific departments, or bureaucratic processes slow down obtaining the right tools or staff.
+Very large teams also reported lack of resources, which might seem counterintuitive at first. A possible explanation is that in big organizations, specialized resources are sometimes tied to specific departments, or bureaucratic processes slow down obtaining the right tools or staff.
 
 ![Distribution of deadline-reaching obstacles by workplace size ](/media/media/deadline-obstacles-by-workplace-size.svg "Distribution of deadline-reaching obstacles by workplace size ")
 
-* **Very small workplaces** (fewer than 10 employees) frequently struggle with unclear requirements and rapid pivoting, which can make hitting deadlines more challenging. Their focus on speed and experimentation might overshadow formal planning.
+Smallest workplaces frequently struggle with unclear requirements and rapid pivoting, which can make hitting deadlines more challenging. Their focus on speed and experimentation might overshadow formal planning.
 
-* **Medium-sized workplaces** tend to have more stable processes, so they rather report scope creep or internal dependencies instead of constant requirement changes.
+Medium-sized workplaces tend to have more stable processes, so they rather report scope creep or internal dependencies instead of constant requirement changes.
 
-* **Larger enterprises** show a spread of different challenges: some mention hidden complexity in legacy systems. Even though they have more established procedures, the slow decision-making and multiple layers of management can slow progress.
+Larger enterprises show a spread of different challenges: some mention hidden complexity in legacy systems. Even though they have more established procedures, the slow decision-making and multiple layers of management can slow progress.
 
 > [!IMPORTANT]
 > Across team sizes and company sizes, scope creep and unclear requirements are the usual blockers of on-time delivery. Adding people doesn't fix unclear scope.
@@ -140,7 +150,13 @@ Some big organizations still cope with heavy bureaucracy that can slow delivery,
 
 > "Less bureaucracy in a large company."
 
-### The impact of CI/CD
+![Distribution of deadline obstacles among developers with varying experience](/media/media/deadline-obstacles-across-developer-experience.svg "Distribution of deadline obstacles among developers with varying experience")
+
+It seems apparent that as developer gains experience, unclear requirements become less of a problem. They likely learn how to manage this properly. However, scope creep is a universal challenge across all experience levels.
+
+todo add source csv "You will find the raw dataset here. Text responses have been preprocessed and proofread and sanitized to have a common style."
+
+# Deployments and CI/CD
 
 ![Distribution of deployment times among respondents](/media/media/deployment-time-distribution.svg "Distribution of deployment times among respondents")
 
@@ -155,7 +171,7 @@ Teams with automated deployment show a slightly faster average deployment time. 
 > [!IMPORTANT]
 > Basic CI/CD (builds, tests, deploy) is linked with shorter and more predictable releases. Automate the deployment path.
 
-# Time spent on coding vs meeting deadlines
+# Time spent on coding
 
 Lack of resources, organizational bottlenecks, and unclear requirements appear as main obstacles to meeting deadlines. Hidden complexity (technical debt, legacy code) and CI/test-related problems rank lower in this analysis. Perhaps developers manage to correctly estimate them.
 
@@ -166,55 +182,23 @@ Lack of resources, organizational bottlenecks, and unclear requirements appear a
 
 Legacy code and CI-related challenges are rarely deadline blockers. While legacy systems can be time-consuming, they are relatively predictable once developers understand the codebase. On the other side, unclear requirements can constantly shift, causing repeated rework. Their unpredictability creates far more serious risks to the schedule.
 
-![Distribution of average deadline-reaching frequencies by developer experience level and work environment type](/media/media/time-spent-on-coding-vs-deadlines.svg "Distribution of average deadline-reaching frequencies by developer experience level and work environment type")
-
-One interesting observation is that deadlines seem to be reached less often with experience, regardless of work environment type. Possibly because more complex tasks become more unpredictable.
-
-# Do communication tools matter?
+# Communication tools
 
 Developers rarely have the freedom to choose their preferred communication tool, it is rather a requirement of the employer. Let's examine how satisfied they are with them.
 
 ![Distribution of communication tools among respondents](/media/media/primary-collaboration-tool-usage.svg "Distribution of communication tools among respondents")
 
-* **Microsoft Teams** seems to be the leader in big corporations, probably because these companies already use the Microsoft Office suite, so it's a natural choice to opt in with Teams for additional integrations as they are already deep into the ecosystem.
+Microsoft Teams seems to be the leader in big corporations, perhaps these companies already use the Microsoft Office suite, so it's a natural choice to opt in with Teams for additional integrations as they are already deep into the ecosystem.
 
-* **Slack** seems to be less popular with the biggest companies, and is rather a choice for mid-sized companies.
-
-* **Google Chat** has a considerable user base in large companies, most likely due to being in the Google Workspace suite, but it remains the least popular of the "big three".
-
-* Other choices included Discord, Mattermost, internal tools and plain emails. They will not be extensively covered further.
+Other choices included Discord, Mattermost, internal tools and plain emails. They will not be extensively covered further.
 
 ![Average communication tools ratings among respondents ](/media/media/communication-tools-satisfaction.svg "Average communication tools ratings among respondents ")
 
-Satisfaction scores indicate that Slack is the best rated tool, followed by Google Chat and Microsoft Teams, which also hold a wider distribution of satisfaction scores.
+Slack's threading & organization was praised: many highlighted threaded conversations, flexible channel architecture, lightweight feel for daily tasks and advanced search. Developer workflows were easier to build thanks to integrations with GitHub/GitLab, slash commands.
 
-To explore why, open-ended responses were analyzed and paraphrased to preserve anonymity, revealing common user sentiments about each tool.
+Microsoft Teams was appreciated for its integration with Outlook, corporate auth (AD/SSO), and the Office ecosystem and how calendar, calls, and chat are consolidated in one place to avoid distractions. However, it received negative feedback for being resource-heavy & bloated. Several respondents called it "slow", "clunky" or prone to random sign-outs, buggy screen-sharing issues. Teams forced to migrate from Slack reported negative morale and criticized poorer integration capabilities compared to Slack.
 
-## Slack
-
-Many respondents praise threading & organization: many highlight Slack's threaded conversations, flexible channel architecture, "lightweight feel" for daily tasks and advanced search. Developer workflows are a big plus thanks to integrations with GitHub/GitLab, slash commands.
-
-Some respondents however noted its limited impact on efficiency: one respondent noted Slack "has never had an effect on my efficiency", calling it simply "functional". Some see Slack just as an alternative to other platforms.
-
-## Microsoft Teams
-
-People appreciate how Teams syncs with Outlook, corporate auth (AD/SSO), and the Office ecosystem and how calendar, calls, and chat are consolidated in one place to avoid distractions.
-
-It has received negative feedback for being resource-heavy & bloated: several respondents called it "slow", "clunky" or prone to random sign-outs, buggy screen-sharing issues. Teams forced to migrate from Slack reported negative morale and "cumbersome integration capabilities" compared to Slack.
-
-## Google Chat
-
-Praised for being lightweight & quick to setup. Minimal clutter, easy adoption, and low friction if you already use Gmail or Google Docs. Perfect for basic messaging: fine for smaller teams or simple chats. Meeting links or simple file-sharing are quick.
-
-It has its limitations and is missing advanced features: lacks powerful slash commands or robust thread management. In some cases accessibility is subpar: browser/extension incompatibilities, especially for text-based browsing.
-
-![Impact of work environment on efficiency by communication tool](/media/media/communication-tools-impact-on-efficiency.svg "Impact of work environment on efficiency by communication tool")
-
-Looking at how respondents evaluate their overall work environment (e.g., workplace satisfaction, perceived productivity, and clarity of tasks), Slack and Google Chat users display fairly similar, positive ratings of their environment. Microsoft Teams users, however, appear to rate their environment slightly lower on average.
-
-![Flow interruptions frequency by communication tool](/media/media/communication-tools-interruptions-frequency.svg "Flow interruptions frequency by communication tool")
-
-Choice of communication tool alone may not drastically affect how frequently developers are interrupted. Instead, interruptions may be originate from the organizational culture and scheduling practices than the platform itself.
+Google Chat received praise for being lightweight & quick to setup. Minimal clutter, easy adoption, and low friction if the team already uses Gmail or Google Docs. Perfect for basic messaging and smaller teams. Meeting links or simple file-sharing are easy to use. Some respondents noted its limitations: lacks powerful slash commands or robust thread management. In some cases accessibility is lacking: browser/extension incompatibilities, especially for text-based browsing.
 
 ![Flow interruptions types by communication tool](/media/media/interruption-types-by-communication-tool.svg "Flow interruptions types by communication tool")
 
@@ -223,45 +207,26 @@ Given Microsoft Teams' tight integration with Outlook, and Google Chat's integra
 > [!IMPORTANT]
 > Tool choice slightly affects satisfaction (Slack > Chat > Teams in this sample), but interruption rate is affected more by work culture and scheduling than by the chat tool itself.
 
-# Can code reviews affect well-being of developers?
+# Code reviews
 
-Peer code reviews are a common practice in software development teams. It's a means of finding errors and logical mistakes.
-
-However, extended review cycles can delay merges, especially in busy teams. Prolonged branches or unresolved pull requests risk creating "merge hell", which can lead to massive delays, potentially increasing technical debt.
-
-Let's discover the impact of code review processes on developers.
+Peer code reviews are a common practice in software development teams. It's a means of finding errors and logical mistakes. However, extended review cycles can delay merges and cause bottlenecks, especially in busy teams. Let's discover how that impacts developers.
 
 ![Distribution of code review wait times](/media/media/code-review-wait-times.svg "Distribution of code review wait times")
 
-Respondents can be categorized depending on how long they wait for code reviews:
+Respondents can be naturally categorized depending on their impression on code reviews. Code reviews are _fast_ if performed within 24h, otherwise they are _delayed_.
 
-- **Delayed**: those who reported typically waiting more than 1 day.
+Additionally, developers were categorized based on the perceived impact of receiving code reviews: _helpful_ if code reviews are rated 4-5, _unhelpful_ otherwise.
 
-- **Fast**: those who typically wait 1 day or less.
-
-1 day is a practical cut-off to distinguish quick-feedback reviews from those that might disrupt flow and create bottlenecks.
-
-Additionally, developers were grouped based on the perceived impact of receiving code reviews.
-
-- **Helpful**: ratings of 4 or 5 (positive).
-
-- **Unhelpful**: ratings of 1, 2, or 3.
-
-Each respondent was assigned to one of these four groups based on their survey answers about wait time and perceived impact. This categorization allows us to compare whether these groups systematically differ.
+Developers were grouped on these categories to assess how they rated their well-being.
 
 ![Mean well-being categories by code review group](/media/media/code-review-well-being.svg "Mean well-being categories by code review group")
 
-- **Highest stress**: *Unhelpful & Delayed*. When feedback is late and of poor quality, developers report feeling blocked and undervalued, aligning with the hypothesis that such conditions intensify stress.
+When feedback is considered unhelpful and arrives late, developers report the **highest average stress level** across all groups.
 
-- **Lowest stress**: *Helpful & Delayed*. Surprisingly, even though reviews come late, if the feedback is eventually constructive and collaborative, participants often report being less stressed. Perhaps these developers work in an environment with flexible deadlines or more empathetic management—so even a delayed review is not perceived as a severe bottleneck.
+The exact opposite is observed if the feedback is helpful, regardless of being delayed: developers report the **lowest stress levels** on average. Most likely good feedback gives a sense of support and helps to celebrate achievements.
 
-- **Lowest recognition**: Tends to cluster in the *Unhelpful & Fast* group. This suggests that such feedback is rushed, consists of purely checking boxes and rarely involves praise.
+Another group to consider is the one considering code reviews fast, but unhelpful. This group reports **high levels of impostor syndrome and rarely report receiving recognition**. It's possible they find feedback inconstructive or purely "nitpicky", putting their work constantly under scrutiny without providing actual support, consisting of purely checking boxes and rarely involving any praise.
 
-- **Higher recognition**: *Helpful* groups (whether prompt or delayed) generally reported feeling more appreciated. Good feedback promotes a sense of support and achievement.
-
-- **Worst impostor ratings**: *Unhelpful & Fast*. Despite getting quick feedback, if the reviews are not constructive or are purely "nitpicky", developers might feel their work is constantly under scrutiny without providing actual support. This aligns with the idea that the quality of feedback matters deeply for confidence.
-
-- **Mixed impostor syndrome results**: *Unhelpful & Delayed* also scores high on impostor syndrome but not the worst. Individual circumstances and other confounding variables (e.g., how the team interacts outside formal reviews) could account for the difference.
 
 > [!IMPORTANT]
 > Set review SLAs (less than 24 hours) and expectations (ask for reasoning, not nitpicks). Quality is more important than speed, but no one should wait days for feedback.
@@ -282,51 +247,31 @@ In addition to timeliness and quality, some respondents highlighted the value of
 
 This aligns with participants' answers to open-ended questions regarding their experiences with code reviews:
 
-## Positive code-review experience
+- 🟢 **Timely and constructive feedback** boosts developers' confidence. Even small acknowledgments of good coding practices or improvements helps them grow.
 
-- **Timely and constructive feedback**: several respondents noted that quick turnaround and thoughtful feedback boosts confidence. They feel that even small acknowledgments of good coding practices or improvements helps them grow.
+- 🟢 **Collaborative approach** and supportive, discussion-based review culture makes developers feel recognized and reduces impostor syndrome by showing that their work has real value.
 
-- **Collaborative approach**: supportive, discussion-based review culture makes developers feel recognized and reduces impostor syndrome by showing that their work has real value.
+- 🟢 **Learning opportunity** is an integral part of valuable code reviews. Respondents who praised them often viewed them as mentorship moments, where suggestions help them grow.
 
-- **Learning opportunity**: respondents who praised code reviews often viewed them as mentorship moments, where suggestions go beyond simple fixes to real skill-building.
+- 🔴 **Prolonged wait times** increase stress and force context-switching, undermining developers' flow and leaving them uncertain about the quality of their prior work.
 
-## Negative code-review experience
+- 🔴 **"Rubber-stamped" reviews** leave developers feeling underappreciated (lack of achievement acknowledgment) and provokes impostor syndrome, as they never receive substantial validation or guidance.
 
-- **Prolonged wait times**: these delays increase stress and force context-switching, undermining developers' flow and leaving them uncertain about the quality of their prior work.
-
-- **"Rubber-stamped" reviews**: such feedback leaves developers feeling underappreciated (lack of achievement acknowledgment) and provokes impostor syndrome, as they never receive substantial validation or guidance.
-
-- **Minimal praise, unclear expectations**: respondents describe wanting to understand why something is correct or praiseworthy, not just a quick sign-off. In the absence of real insight, they are unsure about their competence.
+- 🔴 **Minimal praise and unclear expectations** isn't found helpful by developers, who rather want to understand why something is correct or praiseworthy. In the absence of valuable insight, they are unsure about their competence.
 
 ![Perceived code review impact on quality per developer experience level](/media/media/code-review-wait-time-vs-quality-across-dev-experience.svg "Perceived code review impact on quality per developer experience level")
 
-Developers rate the impact of code reviews on quality of their work differently, depending on experience level.
+Junior developers tend to positively rate code reviews with longer wait times, a counterintuitive finding. Due to the minimal number of junior respondents, this is considered non-representative.
 
-## Junior developers (0–2 years of experience)
+Mid-level developers appreciate code reviews less when forced to wait longer. Timeliness seems crucial to maintaining flow and momentum in their daily tasks. Several respondents in this group reported fast reviews but described the feedback as unhelpful: describing the feedback as "contradictory", "purely nitpicking", or effectively nonexistent.
 
-For the **few individuals** in this group, their recorded "review quality" tends to improve with longer wait times, a counterintuitive finding. Due to the minimal number of junior respondents, we treat this as non-representative.
+Senior developers show a higher tolerance towards slight delays (it might be a sign of extensiveness). Some respondents indicated that very long waits often result in no actual review, or solely a neutral/box-ticking process. Another respondent reported a mismatch in team expertise, where they receive minimal feedback from junior colleagues.
 
-One junior-type respondent mentioned doing all code reviews solo, effectively receiving no peer input. Another, dealing with a **very long** wait, expressed frustration about a siloed environment where colleagues are unwilling to review.
-
-Both examples confirm that "long" or "fast" reviews can become meaningless if genuine peer interaction is missing, complicating any numeric findings.
-
-## Mid-level developers (3–6 years of experience)
-
-Mid-level devs appreciate code reviews less when forced to wait longer. **Timeliness seems crucial** to maintaining flow and momentum in their daily tasks.
-
-Several respondents in this group reported fast reviews but described the feedback as unhelpful: describing the feedback as "contradictory", "purely nitpicking", or effectively nonexistent. This underscores that short wait times alone do not yield positive results if the review's quality is poor.
-
-## Senior developers (\>7 years of experience)
-
-More experienced developers tolerate slight delays (perhaps seeing them as a sign of extensiveness) but report a **steep decline** in perceived quality after a waiting for more than three days.
-
-Some respondents indicated that very long waits often result in no actual review, or solely a neutral/box-ticking process. Another respondent reported a mismatch in team expertise, where they receive minimal feedback from junior colleagues.
-
-# Tech debt: the balance between effort and impact
+# Technical debt
 
 Technical debt can be boiled down to the accumulated cost of **suboptimal or quickly implemented** code that can slow down future development. While technical debt is often introduced for temporary reasons (e.g. meeting short-term deadlines or rapidly prototyping), it slows development down if left unaddressed. Many respondents mentioned legacy code, missing documentation, and poorly structured modules as factors slowing daily work.
 
-![Impact of tech debt time on deadline-reaching frequencies, deployments/month, rating of tech debt impact, developer stress level](/media/media/impact-of-time-spent-on-tech-debt.svg "Impact of tech debt time on deadline-reaching frequencies, deployments/month, rating of tech debt impact, developer stress level")
+![Impact of time spent on paying down tech debt](/media/media/impact-of-time-spent-on-tech-debt.svg "Impact of time spent on paying down tech debt")
 
 It seems apparent that teams spending the most time on tech debt rarely reach deadlines, and at the same time report the highest number of deployments per month.
 
@@ -341,38 +286,26 @@ Respondents had the possibility to explain how tech debt impacts their productiv
 
 ![Common words from feedback negatively rating the effect of tech debt on their productivity](/media/media/negative-tech-debt-impact-on-productivity.svg "Common words from feedback negatively rating the effect of tech debt on their productivity")
 
-Developers that reported negative impact of tech debt on their productivity see technical debt as an ongoing struggle. They regularly reach blockers or fight friction whenever they try to implement new features.
+Developers reporting negative impact of tech debt on their productivity see technical debt as an ongoing struggle. They regularly fight blockers whenever they try to implement new features.
 
-* **Legacy code & poor documentation**: many mention inherited undocumented systems that slow all tasks. Old code bases appear hard to work on, so each change risks new bugs or confusion.
+Many mention inherited undocumented systems that slow all tasks. Old code bases appear hard to work on, so each change risks new bugs or confusion.
 
-* **Insufficient time to address debt**: being the only developer or working under tight deadlines leads to rare refactoring at best. Because no formal process or time is allocated, they only fix issues when absolutely necessary.
-
-* **Lack of management support**: some note that higher-level leaders do not care about code quality, prioritizing quick feature delivery instead. Over time, this approach worsens the code structure and forces developers to fight with messy parts.
-
-* **Chaotic or entangled modules**: respondents describe multiple "workarounds" or severely "entangled" code paths, making any enhancement risky. Without stable foundations, even small tasks involve disproportionately high effort.
+Respondents working solo or under tight deadlines rarely have opportunities for refactoring. Because no formal time is allocated, they only fix issues when absolutely necessary. Since higher-level leaders do not care about code quality, prioritizing quick feature delivery instead, over time the codebase becomes messy.
 
 ![Common words from feedback non-negatively rating the effect of tech debt on their productivity](/media/media/positive-tech-debt-impact-on-productivity.svg "Common words from feedback non-negatively rating the effect of tech debt on their productivity")
 
-Developers perceiving tech debt as positive don't claim zero debt. Rather they report having practical control of it.
-
-* **Balanced approach**: some believe they have "just enough" debt. They do not see it as severely blocking progress.
-
-* **In the process of paying down**: certain respondents actively schedule refactoring or "technical debt tickets" each sprint. While debt is present, regular backlog management keeps it from getting out of control.
-
-* **Selective or targeted fixes**: some fix easy items (e.g. small code smells) right away and document the bigger ones for future tasks.
-
-* **Awareness of code hotspots**: respondents emphasize that if you know which parts of the code are most affected by tech debt (**"hotspots"**), it is easier to address them on demand. Although not perfect, this strategy stops the worst side effects from unmaintained areas.
+Developers perceiving tech debt as positive don't claim zero debt: rather they have **practical control** over it. Some schedule refactoring or "technical debt tickets" each sprint. While debt is present, regular backlog management keeps it from getting out of control.
 
 > [!IMPORTANT]
 > Regularly allocating time for debt appears beneficial. The best outcomes seem to appear when debt is managed in **consistent but balanced** manner, avoiding both full-blown rewrites and complete neglect.
 
 # Conclusion
 
-## Quick wins
+The survey results present a common problem: most problems with developer productivity aren't caused by lack of talent, but rather friction in processes.
 
-By addressing common problems and making small improvements, teams can see immediate benefits, such as faster task completion and higher morale. Practical recommendations that can be implemented right away:
+Practical recommendations on smoothing everyday processes:
 
-| Action steps                                                                                                                                      | Expected benefit                                                   |
+| Quick action step                                                                                                                                      | Expected benefit                                                   |
 |---------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | **Automate the small stuff** <br/> - Configure basic CI/CD pipelines for builds, tests, and deployments <br/> - Integrate code linters/formatters                                         | Reduces manual errors, saves developer time, and removes repetitive style discussions |
 | **Improve task clarity** <br/> - Remember to clear up uncertainties during daily stand-ups <br/> - Thoroughly refine tickets before work begins                                   | Minimizes confusion, avoids rework caused by unclear requirements    |
@@ -382,15 +315,13 @@ By addressing common problems and making small improvements, teams can see immed
 | **Immediate recognition** <br/> - Celebrate small wins with your team <br/> - Acknowledge code review or task completions                                                      | Boosts morale, promotes positive team culture                      |
 
 
-## Long-term strategies
+The most durable improvements come from reshaping team culture and re-defining technical foundations:
 
-More comprehensive changes that require more time and effort to implement, but may lead to prolonged improvements in developer efficiency:
-
-| Action steps                                                                                                                                   | Expected benefit                                                                 |
+| Long-term strategy                                                                                                                                   | Expected benefit                                                                 |
 |-----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| **Implement effective planning** <br/> - Adopt robust requirement practices (e.g., backlog grooming, user story mapping)                                                             | Reduces misunderstandings and rework; improves transparency in project scope    |
-| **Promote a smooth code review culture** <br/> - Define code review SLAs (e.g., max 24-hour turnaround)<br/>- Emphasize mentorship by explaining the "why" behind suggestions                   | Keeps tasks flowing, improves knowledge sharing, and increases developer confidence |
-| **Systematically address tech debt** <br/> - Allocate a consistent share of each sprint (e.g., 10–20%) for refactoring<br/>- Maintain a visible "technical debt board" to prioritize items by risk and impact | Prevents legacy issues from piling up; ensures sustainable code quality over time |
+| **Implement effective planning** <br/> - Adopt robust requirement practices (e.g. backlog grooming, user story mapping)                                                             | Reduces misunderstandings and rework; improves transparency in project scope    |
+| **Promote a smooth code review culture** <br/> - Define code review SLAs (e.g. max 24-hour turnaround)<br/>- Emphasize mentorship by explaining the "why" behind suggestions                   | Keeps tasks flowing, improves knowledge sharing, and increases developer confidence |
+| **Systematically address tech debt** <br/> - Allocate a consistent share of each sprint (e.g. 10–20%) for refactoring<br/>- Maintain a visible "technical debt board" to prioritize items by risk and impact | Prevents legacy issues from piling up; ensures sustainable code quality over time |
 | **Promote adaptable work environments** <br/> - Offer flexible policies (remote, on-site, or hybrid) based on team and project needs<br/>- Use team-building events to maintain connection | Balances productivity with well-being; mitigates isolation and helps retain talent |
 | **Support well-being & recognition** <br/> - Schedule regular 1:1s for feedback, goal-setting, and personal challenges<br/>- Provide "no-blame" retrospectives and genuine appreciation for efforts | Builds psychological safety, reduces burnout, and improves teamwork         |
 

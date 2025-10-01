@@ -9,6 +9,8 @@ function ClientTOC() {
             tocSelector: '.js-toc',
             contentSelector: '#article-content',
             headingSelector: 'h1',
+            // ignore post title
+            ignoreSelector: 'h1:first-child',
             activeLinkClass: styles.activeLink,
             activeListItemClass: styles.activeLi,
             extraLinkClasses: styles.link,

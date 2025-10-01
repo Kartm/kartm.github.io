@@ -18,7 +18,7 @@ table {
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 0.8em;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid #ddd
 }
 
 thead tr {
@@ -45,7 +45,7 @@ tbody tr:last-of-type {
 }
 
 blockquote {
-  background: #f9f9f9;
+  background: #ededed;
   border-left: 10px solid #ccc;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
@@ -68,6 +68,17 @@ blockquote:after {
 blockquote p {
   display: inline;
 }
+
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 3em 0;
+  padding: 0;
+}
+
 
 .article-content {
   max-width: 80ch;
