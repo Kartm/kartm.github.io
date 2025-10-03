@@ -1,39 +1,37 @@
 version: '3'
 
 tasks:
-  tasks:
-    build:
-      desc: Build and export static site to ./out
-      cmds:
-        - npm run build
-      sources:
-        - '**/*.js'
-        - '**/*.ts'
-        - '**/*.tsx'
-        - '**/*.jsx'
-        - public/**/*
-        - pages/**/*
-        - app/**/*
+  build:
+    desc: Build and export static site to ./out
+    cmds:
+      - npm run build
+    sources:
+      - '**/*.js'
+      - '**/*.ts'
+      - '**/*.tsx'
+      - '**/*.jsx'
+      - public/**/*
+      - pages/**/*
+      - app/**/*
 
-    prepare-static:
-      desc: Copy gh-pages specific files into the exported site
-      cmds:
-        - test -f out/.nojekyll || touch out/.nojekyll
-        - cat > out/CNAME <<EOF
-          www.lblachnicki.com
-          EOF
+  prepare-static:
+    desc: Copy gh-pages specific files into the exported site
+    cmds:
+      - mkdir -p out
+      - test -f out/.nojekyll || touch out/.nojekyll
+      - printf '%s\n' 'www.lblachnicki.com' > out/CNAME
 
-    gh-pages-deploy:
-      cmds:
-        - task: prepare-static
-        - git checkout -f master
-        - git checkout --orphan gh-pages
-        - git --work-tree out add --all
-        - git --work-tree out commit -m 'gh-pages'
-        - git push origin HEAD:gh-pages --force
-        - git checkout -f master
+  gh-pages-deploy:
+    cmds:
+      - task: prepare-static
+      - git checkout -f master
+      - git checkout gh-pages
+      - git --work-tree out add --all
+      - git --work-tree out commit -m 'gh-pages'
+      - git push origin HEAD:gh-pages --force
+      - git checkout -f master
 
-    deploy:
-      cmds:
-        - task: build
-        - task: gh-pages-deploy
+  deploy:
+    cmds:
+      - task: build
+      - task: gh-pages-deploy
