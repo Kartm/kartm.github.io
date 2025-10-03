@@ -1,5 +1,10 @@
 version: '3'
 
+vars:
+  BUILD_DIR: out
+  DEPLOY_BRANCH: gh-pages
+  TIMESTAMP: '{{ now | date "2006-01-02_15-04-05" }}'
+
 tasks:
   build:
     desc: Build and export static site to ./out
@@ -15,23 +20,28 @@ tasks:
       - app/**/*
 
   prepare-static:
+    deps:
+      - build
     desc: Copy gh-pages specific files into the exported site
     cmds:
-      - mkdir -p out
       - test -f out/.nojekyll || touch out/.nojekyll
       - printf '%s\n' 'www.lblachnicki.com' > out/CNAME
 
   gh-pages-deploy:
+    deps:
+      - prepare-static
     cmds:
-      - task: prepare-static
-      - git checkout -f master
-      - git checkout gh-pages
-      - git --work-tree out add --all
-      - git --work-tree out commit -m 'gh-pages'
-      - git push origin HEAD:gh-pages --force
-      - git checkout -f master
+      - git worktree remove .deploy || true
+      - git worktree add -B {{.DEPLOY_BRANCH}} .deploy origin/{{.DEPLOY_BRANCH}} || git worktree add -B {{.DEPLOY_BRANCH}} .deploy $(git rev-parse --verify {{.DEPLOY_BRANCH}} || echo "HEAD")
+      - rm -rf .deploy/*
+      - cp -r {{.BUILD_DIR}}/. .deploy/
+      - cd .deploy && git add --all && git commit -m "Deploy {{.TIMESTAMP}}" || true
+      - cd .deploy && git push origin {{.DEPLOY_BRANCH}}
+      - cd ..
+      - git worktree remove .deploy
 
   deploy:
     cmds:
-      - task: build
+      - git checkout master
       - task: gh-pages-deploy
+      - git checkout master

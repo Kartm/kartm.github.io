@@ -7,11 +7,10 @@ import rehypeFigure from "@microflash/rehype-figure";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Configure `pageExtensions` to include markdown and MDX files
+  output: 'export',
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
-  // Optionally, add any other Next.js config below
   images: {
-    unoptimized: true, // todo optimize
+    unoptimized: true,
   },
   reactStrictMode: true,
 }
