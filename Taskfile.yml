@@ -3,7 +3,7 @@ version: '3'
 vars:
   BUILD_DIR: out
   DEPLOY_BRANCH: gh-pages
-  TIMESTAMP: '{{ now | date "2006-01-02_15-04-05" }}'
+  TIMESTAMP: '{{ now | date "2006-01-02 15:04:05" }}'
 
 tasks:
   build:
